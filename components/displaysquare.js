@@ -11,6 +11,9 @@ class DisplaySquare{
 	handleClick(){
 		console.log('display was clicked');
 	}
+	changeText( newText ){
+		this.domElements.displayText.text( newText );
+	}
 	render(){
 		var container = $("<div>",{
 			'class': 'displayContainer',

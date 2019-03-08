@@ -5,4 +5,5 @@ var timeDisplayObj = null;
 
 function initializeApp(){
 	timeDisplayObj = new TimeDisplay('body');
+	timeDisplayObj.createDisplayObjects();
 }

@@ -7,9 +7,11 @@ class DisplaySquare{
 			container: null,
 			displayText: null
 		}
+		this.handleClick = this.handleClick.bind(this);
 	}
 	handleClick(){
 		console.log('display was clicked');
+		this.clickCallback( this );
 	}
 	changeText( newText ){
 		this.domElements.displayText.text( newText );
